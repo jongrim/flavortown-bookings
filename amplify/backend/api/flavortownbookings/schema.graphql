@@ -1,0 +1,6 @@
+type Booking @model {
+  id: ID!
+  name: String
+  partySize: Int
+  dateTime: AWSDateTime!
+}

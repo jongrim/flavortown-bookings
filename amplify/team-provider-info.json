@@ -1,0 +1,15 @@
+{
+  "main": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-flavortownbookings-main-101932-authRole",
+      "UnauthRoleArn": "arn:aws:iam::298644330995:role/amplify-flavortownbookings-main-101932-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::298644330995:role/amplify-flavortownbookings-main-101932-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-flavortownbookings-main-101932-deployment",
+      "UnauthRoleName": "amplify-flavortownbookings-main-101932-unauthRole",
+      "StackName": "amplify-flavortownbookings-main-101932",
+      "StackId": "arn:aws:cloudformation:us-east-1:298644330995:stack/amplify-flavortownbookings-main-101932/154cf0f0-ae76-11eb-9a19-0aa80e27dccf",
+      "AmplifyAppId": "d2lk3mm8k1gcdu"
+    }
+  }
+}
