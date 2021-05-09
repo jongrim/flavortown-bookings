@@ -1,3 +1,4 @@
+/* tslint:disable */
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
@@ -9,8 +10,10 @@ export const createBooking = /* GraphQL */ `
     createBooking(input: $input, condition: $condition) {
       id
       name
+      email
       partySize
-      dateTime
+      date
+      time
       createdAt
       updatedAt
     }
@@ -24,8 +27,10 @@ export const updateBooking = /* GraphQL */ `
     updateBooking(input: $input, condition: $condition) {
       id
       name
+      email
       partySize
-      dateTime
+      date
+      time
       createdAt
       updatedAt
     }
@@ -39,8 +44,10 @@ export const deleteBooking = /* GraphQL */ `
     deleteBooking(input: $input, condition: $condition) {
       id
       name
+      email
       partySize
-      dateTime
+      date
+      time
       createdAt
       updatedAt
     }

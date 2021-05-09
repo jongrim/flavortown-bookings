@@ -1,3 +1,4 @@
+/* tslint:disable */
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
@@ -6,8 +7,10 @@ export const onCreateBooking = /* GraphQL */ `
     onCreateBooking {
       id
       name
+      email
       partySize
-      dateTime
+      date
+      time
       createdAt
       updatedAt
     }
@@ -18,8 +21,10 @@ export const onUpdateBooking = /* GraphQL */ `
     onUpdateBooking {
       id
       name
+      email
       partySize
-      dateTime
+      date
+      time
       createdAt
       updatedAt
     }
@@ -30,8 +35,10 @@ export const onDeleteBooking = /* GraphQL */ `
     onDeleteBooking {
       id
       name
+      email
       partySize
-      dateTime
+      date
+      time
       createdAt
       updatedAt
     }

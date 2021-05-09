@@ -1,6 +1,14 @@
-type Booking @model {
+type Booking
+  @model
+  @key(
+    name: "bookingsByDate"
+    fields: ["date", "time"]
+    queryField: "bookingsByDate"
+  ) {
   id: ID!
   name: String
+  email: AWSEmail
   partySize: Int
-  dateTime: AWSDateTime!
+  date: AWSDate!
+  time: AWSTime!
 }
