@@ -18,6 +18,7 @@ import {
   Box,
   Flex,
   Divider,
+  FormHelperText,
 } from '@chakra-ui/react';
 import { FiClock } from 'react-icons/fi';
 import { updateBooking } from '../../api/bookings';
@@ -30,6 +31,7 @@ import {
 } from '../../utils/dateFns';
 import { sortByTime } from '../../Pages/Bookings/utils';
 import Heading from '../../Components/Heading/Heading';
+import { isValid } from 'date-fns';
 
 interface UpdateBookingModalProps {
   isOpen: boolean;
@@ -50,6 +52,7 @@ export default function UpdateBookingModal({
   const booking = bookings[trackedId];
 
   const [trackedDate, setTrackedDate] = React.useState(booking?.date ?? '');
+  const [dateError, setDateError] = React.useState('');
   const [name, setName] = React.useState(booking?.name ?? '');
   const [email, setEmail] = React.useState(booking?.email ?? '');
   const [partySize, setPartySize] = React.useState(booking?.partySize ?? '');
@@ -172,17 +175,24 @@ export default function UpdateBookingModal({
             <Text color="gray.600" mt={1} mb={2}>
               Select a new date, and then an available time
             </Text>
-            <FormControl id="date" isRequired>
+            <FormControl id="date" isRequired isInvalid={Boolean(dateError)}>
               <FormLabel>Date</FormLabel>
               <Input
                 id="date"
                 type="date"
-                value={trackedDate}
+                defaultValue={trackedDate}
                 required
-                onChange={({ target }) => {
-                  setTrackedDate(target.value);
+                onBlur={({ target }) => {
+                  const date = parseFullDate(target.value);
+                  if (isValid(date)) {
+                    setTrackedDate(target.value);
+                    setDateError('');
+                  } else {
+                    setDateError('Please eneter a date in YYYY-MM-DD format');
+                  }
                 }}
               />
+              <FormHelperText>{dateError}</FormHelperText>
             </FormControl>
             <FormControl id="time" isRequired mt={2}>
               <FormLabel>Time</FormLabel>
