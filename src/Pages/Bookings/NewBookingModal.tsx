@@ -61,7 +61,7 @@ export default function NewBookingModal() {
       for (let i = 0; i < Number(frequency); i++) {
         promises.push(
           createBooking({
-            date,
+            date: bookingDate,
             time: formatISO(intermediateTime, { representation: 'time' }),
           })
         );
