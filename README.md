@@ -1,6 +1,6 @@
 # Flavortown Bookings
 
-This is a sample project created to explore the design of a restaurant bookings platform. You can [view this project live](https://main.d2lk3mm8k1gcdu.amplifyapp.com/bookings/all) or clone and (run locally)[#running-locally].
+This is a sample project created to explore the design of a restaurant bookings platform. You can [view this project live](https://main.d2lk3mm8k1gcdu.amplifyapp.com/bookings/all) or clone and [run locally](#running-locally).
 
 ## System design
 
