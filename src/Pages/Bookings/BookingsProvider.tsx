@@ -2,7 +2,7 @@ import * as React from 'react';
 import { API } from 'aws-amplify';
 import { useParams } from 'react-router-dom';
 import * as subscriptions from '../../graphql/subscriptions';
-import { Booking } from '../../API';
+import { Booking } from './types';
 import { loadBookings, loadBookingsByDate } from '../../api/bookings';
 import { keyedObjectFromArray } from '../../utils/array-utils';
 

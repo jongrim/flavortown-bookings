@@ -1,8 +1,8 @@
 import { API } from 'aws-amplify';
 import * as queries from '../graphql/queries';
 import * as mutations from '../graphql/mutations';
+import { Booking } from '../Pages/Bookings/types';
 import {
-  Booking,
   CreateBookingInput,
   ListBookingsQueryVariables,
   UpdateBookingInput,

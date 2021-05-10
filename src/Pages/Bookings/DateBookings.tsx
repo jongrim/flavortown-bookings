@@ -11,7 +11,7 @@ import {
 } from '../../utils/dateFns';
 import LinkButton from '../../Components/LinkButton/LinkButton';
 import Heading from '../../Components/Heading/Heading';
-import { Booking } from '../../API';
+import { Booking } from './types';
 import UpdateBookingModal from './UpdateBookingModal';
 import { useBookings } from './BookingsProvider';
 import { sortByTime } from './utils';

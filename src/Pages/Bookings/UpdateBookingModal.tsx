@@ -21,7 +21,7 @@ import {
 } from '@chakra-ui/react';
 import { FiClock } from 'react-icons/fi';
 import { updateBooking } from '../../api/bookings';
-import { Booking } from '../../API';
+import { Booking } from './types';
 import { useBookings } from '../../Pages/Bookings/BookingsProvider';
 import {
   convertISOStringToTime,

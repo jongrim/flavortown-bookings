@@ -32,4 +32,6 @@ To create new booking inventory, there is an Add button available from both book
 
 You can run the project locally by cloning and then running the `amplify init` command in the root of the project. When prompted, create your own backend so that you have your own sandbox. Learn more [about the per developer sandbox flow](https://docs.aws.amazon.com/amplify/latest/userguide/team-workflows-with-amplify-cli-backend-environments.html#sandbox_).
 
+You will then need to create the API in your sandbox. Run `amplify update api` to create your settings for the API, and then `amplify push` to provision it.
+
 Note, this requires the amplify CLI tool to be installed and you should be familiar with initializing Amplify projects. [Learn more about Amplify and how to get started](https://docs.amplify.aws/).
